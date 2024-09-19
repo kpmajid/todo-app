@@ -32,8 +32,10 @@ const TodoApp = () => {
   };
 
   return (
-    <div>
-      <h2>To-Do App</h2>
+    <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
+      <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
+        To-Do App
+      </h2>
       <TodoInput handleTodoAdd={handleTodoAdd} />
       <TodoList
         todos={todos}

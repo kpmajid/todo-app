@@ -4,11 +4,10 @@ const TodoInput = (props) => {
   const { handleTodoAdd } = props;
 
   return (
-    <div>
+    <div className="flex mb-4">
       <input
         type="text"
-        name=""
-        id=""
+        className="flex-grow px-3 py-2 text-gray-700 border rounded-l-lg focus:outline-none"
         placeholder="enter task"
         value={todoValue}
         onChange={(e) => {
@@ -16,6 +15,8 @@ const TodoInput = (props) => {
         }}
       />
       <button
+        type="button"
+        className="px-4 py-2 text-white bg-blue-500 rounded-r-lg hover:bg-blue-600 focus:outline-none"
         onClick={() => {
           if (!todoValue) {
             return;
