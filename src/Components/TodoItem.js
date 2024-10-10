@@ -32,7 +32,7 @@ const TodoItem = ({ todo, toggleTodo, removeTodo, editTodo }) => {
       <div className="flex space-x-2">
         <button
           type="button"
-          onClick={() => handleEdit()}
+          onClick={handleEdit}
           className={`p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors ${
             isEdit
               ? "bg-green-100 text-green-600 hover:bg-green-200 focus:ring-green-500"

@@ -1,7 +1,6 @@
 import TodoItem from "./TodoItem";
 
-const TodoList = (props) => {
-  const { todos, toggleTodo, removeTodo, editTodo } = props;
+const TodoList = ({ todos, toggleTodo, removeTodo, editTodo }) => {
   return todos.length ? (
     <ul className="space-y-2">
       {todos.map((todo) => (
